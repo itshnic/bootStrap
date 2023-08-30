@@ -1,0 +1,47 @@
+@import "mixins";
+
+//<ПЕРЕМЕННЫЕ> ================
+$minWidth: 320;
+$maxWidth: 1440;
+$maxWidthContainer: 1290;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #4f4f4f;
+$backgroundColor: #fafafa;
+// $orangeColor: #ffbf00;
+$orangeColor: #cc9900;
+
+//<Шрифт по умолчанию>=============
+$fontFamily: "GoogleSans";
+$fontSize: 20;
+//</Шрифт по умолчанию>=============
+
+//<ОБЩИЕ ПАРАМЕТРЫ>=======================
+body {
+	color: $mainColor;
+	background: $backgroundColor;
+}
+
+//<ОБОЛОЧКА>=================
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+main {
+	flex-grow: 1;
+}
+//</ОБОЛОЧКА>==================
+
+//<ОСНОВНАЯ СЕТКА>===================
+._container {
+	max-width: $maxWidthContainer + px;
+	padding: 0 15px 0 15px;
+	margin: 0 auto;
+}
+//</ОСНОВНАЯ СЕТКА>==================
